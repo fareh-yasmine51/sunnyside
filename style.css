@@ -1,0 +1,343 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+html, body{
+    overflow-x: hidden;
+}
+.home{
+    height: 100vh;
+    padding: 1rem;
+    background-image: url(images/desktop/image-header.jpg);
+    background-position: center;
+    
+    position: relative;
+}
+.home ul{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+.home ul li {
+    display: inline-block;
+    padding: 20px;
+}
+.home .nav {
+    
+    display: flex;
+    justify-content: space-around;
+   padding-bottom: 10px;
+    text-decoration: none;
+    
+}
+a{
+    text-decoration: none;  
+}
+.nav ul li a{ 
+    color: white;
+}
+.nav ul li a:hover{
+    color: rgb(8, 8, 8);
+    list-style: none;
+    margin: 0rem 1.2rem;
+    display: none;
+    display: inline-block;
+    padding: 20px;
+    transition: 0.4s;
+}
+.btn{
+    color:black;
+    background:white;
+    border: 2px solid white ;
+    border-radius: 100px;
+    padding: 10px 30px;
+    
+    background-size: 152% 100%;
+}
+.btn:hover{
+    opacity: 50%;
+}
+.text{
+    text-align: center;
+}
+.text h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: .5rem;
+    font-weight: 900;
+    margin: 4rem;
+    font-family: 'Fraunces', serif;
+}
+
+.parti1{
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    
+}
+.parti1  article {
+    flex-basis: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   flex-wrap: wrap;
+   background-color:white;
+}
+.parti1  article .parti11 {
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parti1 article .parti11 .parti111{
+    max-width: 70%;
+}
+.parti1 article .parti11 .parti111 h2{
+    font-size: 2.9rem;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+    color: hsl(212, 27%, 19%);
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+}
+.parti1 article .parti11 .parti111 {
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    color: hsl(212, 27%, 19%);
+    font-family: 'Barlow', sans-serif;
+}
+.parti1 article .parti11 .parti111 a{
+    text-decoration: none;
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: .5rem;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Fraunces', serif;
+}
+.parti1 article .parti11 .parti111 a ::before {
+        content: "";
+        position:absolute;
+        bottom: .3rem;
+        left: 0;
+        width: 100%;
+        height:.7rem;
+        background: hsla(51, 100%, 49%, 0.404);
+        z-index: -1;
+        border-radius:.5rem;
+        transition:.35s;
+    }
+    .parti1 article .parti11 .parti111 a :hover::before {
+        background: hsl(51, 100%, 49%);
+    }
+    .parti1 article:nth-child(2) .parti11 .parti111 a::before{
+        content: "";
+        position: absolute;
+        bottom: .3rem;
+        left: 0;
+        width: 100%;
+        height: .7rem;
+        background: hsla(7, 99%, 70%, 0.493);
+        z-index: -1;
+        border-radius: .5rem;
+        transition: .35s;
+    }
+    .parti1 article:nth-child(2) .parti11.parti111 a:hover::before{
+        background: hsl(7, 99%, 70%);
+    }
+    .parti1 article .bida{
+        flex-basis: 50%;
+    overflow: hidden;
+    height: 100%;
+    }
+    .parti1 article .bida img{
+        width: 100%;
+        height: 100%;
+
+    }
+    .parti1 article:nth-child(3) .parti11:nth-child(2){
+        background-image: url(images/desktop/image-photography.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .parti1 article:nth-child(3) .parti11 .parti111 h3{
+        font-size: 1.5rem;
+        color: hsl(198, 62%, 26%);
+        margin-bottom: 1rem;
+        font-family: 'Fraunces', serif;
+    }
+    .parti1 article:nth-child(3) .parti11:nth-child(2) .parti111 p{
+        font-size: .8rem;
+        color: hsl(198, 62%, 26%);
+        font-family: 'Barlow', sans-serif;
+    }
+    .parti1 article:nth-child(3) .parti11{
+        background-image: url(images/desktop/image-graphic-design.jpg);
+        background-position: center;
+        background-size: center;
+        position: relative;
+    }
+    .parti1 article:nth-child(3) .parti11 .parti111{
+        position: absolute;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        max-width: 45%;
+    }
+    .parti1 article:nth-child(3) .parti11 .parti111 h2{
+        font-size: 2rem;
+        color: hsl(167, 40%, 24%);
+        font-family: 'Fraunces', serif;
+    }
+    .parti1 article:nth-child(3) .parti11 .parti111 p{
+        font-size: .8rem;
+        color: hsl(167, 40%, 24%);
+        font-family: 'Barlow', sans-serif;
+    }
+    .parti2{
+        text-align: center;
+       margin-top: 30rem;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 90%;
+        height: 400px;
+        margin-right: 100px;
+       /*flex-direction: column;
+        display: flex;*/
+        
+        
+        
+    }
+    .parti2 h3{
+        text-transform: uppercase;
+        font-weight: 900;
+        color: hsl(210, 4%, 67%);
+        margin-bottom: 3rem;
+        letter-spacing: .3rem;
+        font-family: 'Fraunces', serif;
+        align-items: center;
+        text-align: ;
+    }
+    .parti2 .parti22{
+        
+       justify-content: space-between; 
+    
+       display: flex;
+       align-items: center;
+       margin-left: 200px;
+      
+       
+    }
+    .parti22 div{
+        display: flex;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        
+    
+        
+
+    }
+    .parti2 .parti22 .parti222{
+        display: flex;
+        width: 70%;
+        height: 300%;
+        align-items: center;
+        
+     
+        
+    }
+    
+    .parti2 .parti22 .parti222 img{
+        border-radius: 50%;
+        width: 3.5rem;
+        margin-bottom: 2rem;
+    
+    }
+    .parti2 .parti22 .parti222 p{
+        color: hsl(198, 62%, 26%);
+        margin-bottom: 2.5rem;
+        line-height: 1.6;
+        font-family: 'Barlow', sans-serif;
+        display: flex;
+        align-items: center;
+    }
+    .parti2 .parti22 .parti222 .cl h4{
+        font-weight: 900px;
+        font-size: 1.1rem;
+        margin-bottom: .5rem;
+        font-family: 'Fraunces', serif;
+    }
+    .parti2 .parti22 .parti222 .cl p{
+        font-size: .8rem;
+       
+        font-family: 'Barlow', sans-serif;
+    }
+    .yas{
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70vh;
+    overflow: hidden;
+    }
+    .yas img{
+        width: 100%;
+        height: 100%;
+
+    }
+    footer {
+        padding: 3rem;
+        background: hsl(168, 32%, 55%);
+        text-align: center;
+    }
+    footer nav a{
+        text-decoration: none;
+    }
+   footer nav a img{
+        
+        width: 9rem;
+    }
+  footer nav ul{
+        margin: 2rem 0 4rem;
+    }
+   footer nav ul li{
+        display: inline-block;
+        margin: 0 1rem;
+        list-style: none;
+        align-items: center;
+        
+    }
+    footer nav ul li a{
+        text-decoration: none;
+        color: hsl(167, 40%, 24%);
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: .35s;
+        font-family: 'Barlow', sans-serif;
+    }
+    footer nav ul li a:hover{
+        color: hsl(0, 0%, 100%);
+    }
+    footer  ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer  ul  li{
+        display: inline-block;
+        list-style: none;
+        margin: .7rem;
+    }
+    
+    
